@@ -48,7 +48,7 @@ class ViewController: UIViewController {
                 if let httpResponse = response as? HTTPURLResponse {
                     if httpResponse.statusCode == 200{
                         DispatchQueue.main.async {
-                            self.goToCrafter(data!)
+                            self.goToCrafter(data: data!)
                         }
                     }
                 }
